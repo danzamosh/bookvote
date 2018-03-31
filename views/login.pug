@@ -1,0 +1,20 @@
+extends layout
+
+block buttons
+  .button-wrapper
+    a(href="add")
+      button.button= "Add Book"
+    a(href="signup")
+      button.button.white= "Signup"
+
+block body
+  .books
+    .outside
+      .form-card
+        form(method="POST")
+          h2.form= "Login"
+          if error
+            h3.error= "Incorrect username and password combination."
+          input(placeholder="Username" type="text" name="username" required)
+          input(placeholder="Password" type="password" name="password" required)
+          button(class="small button" type="submit")= "Login"

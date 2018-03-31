@@ -1,0 +1,256 @@
+@font-face {
+    font-family: 'Gilroy ExtraBold';
+    font-weight: normal;
+    font-style: normal;
+    src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/183516/gilroy-extrabold-webfont.woff') format('woff');
+}
+
+.header {
+  min-height: 150px;
+}
+
+.cover {
+  height: 150px;
+  width: 100px;
+  display: block;
+  margin-left: 35px;
+}
+
+.title{
+  margin-top: 30px;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Gilroy ExtraBold", system-ui, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  margin: 0!important;
+}
+
+.header h1 {
+  display: inline;
+  float: left;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.score {
+  float: left;
+  height: 100%;
+  line-height: 180px;
+}
+.form{
+  font-size: 2em;
+  font-weight: 500;
+}
+h3.error {
+  color: #a94442;
+  background-color: #f2dede;
+  padding: 10px;
+  border-radius: 10px;
+
+}
+h3 {
+  font-family: "Gilroy", system-ui, sans-serif;
+  margin: 15px 0px 10px 0px;
+}
+input {
+  height: 45px;
+  font-size: 20px;
+  font-weight: 500;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px lightgrey solid;
+  font-family: "Gilroy", system-ui, sans-serif;
+  padding: 0 15px;
+  margin: 8px 0px 8px 0px;
+  width: 100%;
+  outline: none;
+}
+button.visited {
+  border: #6CC576 3px solid;
+}
+button.visited h1 {
+  color: rgb(108, 197, 118);
+}
+.vote {
+  background-color: #ffffff;
+  height: 100px;
+  width: 100px;
+  cursor:pointer;
+  border: #f4157e 3px solid;
+  border-radius: 100%;
+  text-align: center;
+  outline: none;
+}
+.vote:focus {
+  outline: 0;
+}
+.vote h1{
+  color: #f4157e;
+}
+
+h2 {
+  font-family: "Gilroy", system-ui, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  vertical-align: middle;
+  font-size: 20px;
+  margin: 5px -10px 10px 0px;
+}
+
+.card {
+  display: block;
+  padding: 10px;
+  min-height: 180px;
+  position: relative;
+  border-radius: 0px;
+  width: 100%;
+  border-bottom: 1px lightgrey solid;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+.form-card {
+  display: block;
+  padding: 10px;
+  height: auto;
+  position: relative;
+  border-radius: 0px;
+  width: 100%;
+  border: none;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+.last {
+  border-bottom: none;
+}
+
+.image {
+  display: block;
+  float: left;
+}
+
+.description {
+  padding-left:10px;
+  height:100%;
+  display:inline;
+}
+
+.outside {
+  padding: 10px;
+  box-shadow:0 0 10px 0 rgba(0,0,0,.1), 0 0 10px 0 rgba(0,0,0,.1);
+  border-radius:10px;
+  margin: 0px auto 50px auto!important;
+  width: 60%;
+  background: #fff;
+}
+
+#row {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 70%;
+  margin-top: 5%;
+}
+
+body {
+  background: #f8faff;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-kerning: normal;
+  -webkit-text-size-adjust: 100%;
+}
+.button-wrapper {
+  position: relative;
+  display: inline;
+  float: right;
+}
+.button {
+  font-family: "Gilroy ExtraBold", system-ui, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 18px;
+  line-height: 60px;
+  text-transform: uppercase;
+  background: #f4157e;
+  color: #f8faff;
+  appearance: none;
+  border: none;
+  border-radius: 10px;
+  min-width: 100px;
+  padding: 0 24px;
+  box-shadow: 0 10px 30px -10px #cd106e;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  transform-style: preserve-3d;
+  transform: perspective(250px) scale3d(1, 1, 1);
+  transition: all 1s cubic-bezier(0.03, 0.98, 0.52, 0.99);
+  will-change: transform, box-shadow, background;
+  outline: none;
+  position: relative;
+  z-index: 2;
+}
+.button:hover {
+  background: #f41f83;
+  box-shadow: 0 8px 35px -5px #cd106e;
+}
+.button:active {
+  background: #cd106e;
+  box-shadow: 0 10px 30px -10px #cd106e;
+  transform: perspective(250px) scale3d(1, 1, 1) translateY(5%) !important;
+}
+a {
+  color:inherit;
+}
+.white {
+  background:#ffffff;
+  color:#000000;
+  margin-left: 20px;
+  box-shadow: 0 10px 30px -10px rgba(0,0,0,.3);
+}
+.white:hover,.white:active{
+  background:#f5f5f5;
+  box-shadow: 0 10px 30px -10px rgba(0,0,0,.3);
+}
+.small {
+  margin: 10px 5px 5px 5px;
+  font-size:14px;
+  height:40px;
+  line-height: normal;
+}
+.amazon {
+  background:#ff9900;
+  box-shadow: 0 10px 30px -10px #ff9900;
+}
+.amazon:hover {
+  background: #e68a00;
+  box-shadow: 0 8px 35px -5px #ff9900;
+}
+.amazon:active {
+  background: #e68a00;
+  box-shadow: 0 8px 35px -5px #e68a00;
+}
+.goodreads{
+  background:#553b08;
+  box-shadow: 0 10px 30px -10px #553b08;
+}
+.goodreads:hover{
+  background: #3e2b06;
+  box-shadow: 0 8px 35px -5px #553b08;
+}
+.goodreads:active{
+  background: #3e2b06;
+  box-shadow: 0 8px 35px -5px #3e2b06;
+}
+@media only screen and (max-width: 768px) {
+  .outside {
+    width:100%;
+  }
+}

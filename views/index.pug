@@ -1,0 +1,26 @@
+extends layout
+
+block buttons
+  .button-wrapper
+    a(href="add")
+      button.button= "Add Book"
+    if loggedin
+      a(href="logout")
+        button.button.white= "Logout"
+    else
+      a(href="login")
+        button.button.white= "Login"
+
+block body
+  .books
+    .outside
+      - var last = books.length;
+      - var i = 0;
+      each val in books
+        - i++;
+        if i==last
+          .card.last
+            include card
+        else
+          .card
+            include card

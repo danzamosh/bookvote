@@ -1,0 +1,28 @@
+.score
+  - var id = val.id;
+  if loggedin
+    - var alreadyVoted = false;
+    each book in upvoted
+      if id==book.bookid
+        - alreadyVoted = true;
+        - break;
+    if alreadyVoted
+      button.visited.vote(id=id visited="true")
+        h1.counter= val.score
+    else
+      button.vote(id=id)
+        h1.counter= val.score
+  else
+    button.vote(id=-1)
+      h1.counter= val.score
+.image
+  img.cover(src=val.image)
+.title
+  h2
+    span.bold= val.title
+    |  by&nbsp;
+    = val.author
+  a(href=val.amazon_link target="_blank")
+    button.small.amazon.button= "Amazon"
+  a(href=val.goodreads_link target="_blank")
+    button.small.goodreads.button= "Goodreads"

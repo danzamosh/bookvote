@@ -1,0 +1,21 @@
+extends layout
+
+block buttons
+  .button-wrapper
+    a(href="add")
+      button.button= "Add Book"
+    a(href="login")
+      button.button.white= "Login"
+
+block body
+  .books
+    .outside
+      .form-card
+        form(method="POST")
+          h2.form= "Signup"
+          if error
+            h3.error= "User already exists. Choose a different username."
+          input(placeholder="Username" id="username" type="text" name="username" required)
+          input(placeholder="Email" id="email" type="email" name="email" required)
+          input(placeholder="Password" id="password" type="password" name="password" required)
+          button(class="small button" type="submit")= "Signup"

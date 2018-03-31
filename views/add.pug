@@ -1,0 +1,21 @@
+extends layout
+
+block buttons
+  .button-wrapper
+    a(href="logout")
+      button.button.white= "Logout"
+
+block body
+  .books
+    .outside
+      .form-card
+        form(method="POST")
+          h2.form= "Add Book"
+          if error
+            h3.error= "Please make sure the Amazon link is correct."
+          input(placeholder="Title" type="text" name="title" required)
+          input(placeholder="Author" type="text" name="author" required)
+          input(placeholder="Image Link" type="text" name="image" required)
+          input(placeholder="Amazon Link" type="text" name="amazon" required)
+          input(placeholder="Goodreads Link" type="text" name="goodreads" required)
+          button(class="small button" type="submit")= "Add Book"
